@@ -2,25 +2,25 @@
    border: 2px solid black;
 }
 
-#trainer-container{
+.trainer-container{
     margin-top: 5%;
-    #trainer{
+    .trainer{
         text-align: center;
         
     }
 }
 
-#image-container{
+.image-container{
    text-align: center;
    margin-top: 3%;
-    #trainer-pic{
+    .trainer-pic{
         height:300px;
         width:200px;
         text-align: center;
     }
 }
 
-#header-container{
+.header-container{
    @extend %border;
    padding: 2%;
    margin: 1%;
@@ -28,7 +28,7 @@
 }
 
 
-#gym-name{
+.gym-name{
     text-align: center;
 }
 .display-pokemon{
@@ -41,11 +41,11 @@
    @extend %border;
 }
 
-#trainer-container{
+.trainer-container{
     flex-direction: column;
 }
 
-#display-container{
+.display-container{
     justify-content: space-evenly;
     margin-top: 8%;
 }

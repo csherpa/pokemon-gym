@@ -1,39 +1,58 @@
-#header-container, .display-pokemon, .display-stats {
-  border: 2px solid black; }
+.header-container, .display-pokemon, .display-stats {
+  border: 2px solid black;
+}
 
-#trainer-container {
-  margin-top: 5%; }
-  #trainer-container #trainer {
-    text-align: center; }
+.trainer-container {
+  margin-top: 5%;
+}
 
-#image-container {
+.trainer-container .trainer {
   text-align: center;
-  margin-top: 3%; }
-  #image-container #trainer-pic {
-    height: 300px;
-    width: 200px;
-    text-align: center; }
+}
 
-#header-container {
+.image-container {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.image-container .trainer-pic {
+  height: 300px;
+  width: 200px;
+  text-align: center;
+}
+
+.header-container {
   padding: 2%;
   margin: 1%;
-  justify-content: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-#gym-name {
-  text-align: center; }
+.gym-name {
+  text-align: center;
+}
 
 .display-pokemon {
   text-align: center;
-  padding: 2%; }
+  padding: 2%;
+}
 
-#trainer-container {
-  flex-direction: column; }
+.trainer-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
-#display-container {
-  justify-content: space-evenly;
-  margin-top: 8%; }
+.display-container {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 8%;
+}
 
 .images {
-  max-width: 50%; }
-
+  max-width: 50%;
+}
 /*# sourceMappingURL=style.css.map */
