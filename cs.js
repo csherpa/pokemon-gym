@@ -1,3 +1,14 @@
+class Gym{
+    constructor(){
+        this.allTrainers = [];
+    }
+    add(trainerObj){
+        this.allTrainers.push(trainerObj);
+    }
+}
+
+let gymMembers = new Gym();
+
 class Titi{
     constructor(){
         this.allPokemon = [];
@@ -74,9 +85,7 @@ let pokemonSearch = (nameValue) =>{
     document.body.appendChild(para);
     
     trainer.add(pokemon);
-    
-    
-
+    gymMembers.add(trainer);
 }).catch((error) =>{
     console.log(error);
 })
