@@ -1,0 +1,60 @@
+%border{
+   border: 2px solid black;
+}
+
+#trainer-container{
+    margin-top: 5%;
+    #trainer{
+        text-align: center;
+        
+    }
+}
+
+#image-container{
+   text-align: center;
+   margin-top: 3%;
+    #trainer-pic{
+        height:300px;
+        width:200px;
+        text-align: center;
+    }
+}
+
+#header-container{
+   @extend %border;
+   padding: 2%;
+   margin: 1%;
+   justify-content: center;
+}
+
+
+#gym-name{
+    text-align: center;
+}
+.display-pokemon{
+   @extend %border;
+   text-align: center;
+   padding: 2%;
+}
+
+.display-stats{
+   @extend %border;
+}
+
+#trainer-container{
+    flex-direction: column;
+}
+
+#display-container{
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+
+
+.images{
+    max-width:50%;
+}
+
+
+
+
