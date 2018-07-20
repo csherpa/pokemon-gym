@@ -1,10 +1,26 @@
 #header-container, .display-pokemon, .display-stats {
   border: 2px solid black; }
 
-#trainer {
+#trainer-container #trainer {
+  text-align: center;
+  margin-top: 6%; }
+
+#image-container {
   text-align: center; }
+  #image-container #trainer-pic {
+    height: 300px;
+    width: 200px;
+    text-align: center; }
+
+#header-container {
+  padding: 2%; }
 
 #gym-name {
   text-align: center; }
+
+#display-pokemon #second-pokemon img {
+  max-width: 80%; }
+#display-pokemon #third-pokemon img {
+  max-width: 80%; }
 
 /*# sourceMappingURL=style.css.map */
