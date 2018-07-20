@@ -1,0 +1,10 @@
+#header-container, .display-pokemon, .display-stats {
+  border: 2px solid black; }
+
+#trainer {
+  text-align: center; }
+
+#gym-name {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

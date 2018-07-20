@@ -1,0 +1,21 @@
+%border{
+   border: 2px solid black;
+}
+
+#trainer{
+    text-align: center;
+}
+
+#header-container{
+   @extend %border;
+}
+#gym-name{
+    text-align: center;
+}
+.display-pokemon{
+   @extend %border;
+}
+
+.display-stats{
+   @extend %border;
+}
