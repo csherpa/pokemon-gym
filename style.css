@@ -16,19 +16,24 @@
 
 #header-container {
   padding: 2%;
-  margin: 1%; }
+  margin: 1%;
+  justify-content: center; }
 
 #gym-name {
   text-align: center; }
 
-#pokemon-container .display-pokemon {
-  padding-bottom: 5%;
-  padding-top: 5%; }
-#pokemon-container #first-pokemon img {
-  max-width: 80%; }
-#pokemon-container #second-pokemon img {
-  max-width: 80%; }
-#pokemon-container #third-pokemon img {
-  max-width: 80%; }
+.display-pokemon {
+  text-align: center;
+  padding: 2%; }
+
+#trainer-container {
+  flex-direction: column; }
+
+#display-container {
+  justify-content: space-evenly;
+  margin-top: 8%; }
+
+.images {
+  max-width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

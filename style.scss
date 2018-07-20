@@ -24,35 +24,37 @@
    @extend %border;
    padding: 2%;
    margin: 1%;
+   justify-content: center;
 }
+
+
 #gym-name{
     text-align: center;
 }
 .display-pokemon{
    @extend %border;
+   text-align: center;
+   padding: 2%;
 }
 
 .display-stats{
    @extend %border;
 }
 
-
-
-
-
-#pokemon-container{
-    .display-pokemon{
-        padding-bottom: 5%;
-        padding-top: 5%;
-    }
-    
-    #first-pokemon img{
-        max-width:80%;
-    }
-    #second-pokemon img{
-        max-width:80%;
-    }
-    #third-pokemon img{
-        max-width:80%;
-    }
+#trainer-container{
+    flex-direction: column;
 }
+
+#display-container{
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+
+
+.images{
+    max-width:50%;
+}
+
+
+
+
