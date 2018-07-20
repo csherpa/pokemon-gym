@@ -9,7 +9,7 @@ class Gym{
 
 let gymMembers = new Gym();
 
-class Titi{
+class Trainers{
     constructor(){
         this.allPokemon = [];
     }   
@@ -26,7 +26,9 @@ class Titi{
     
 }
 
-let trainer = new Titi();
+let chhoti = new Trainers();
+let kevin = new Trainers();
+let jihae = new Trainers();
 
 class Pokemon{
     constructor(name, hp, attack, defense, abilities){
@@ -39,8 +41,8 @@ class Pokemon{
 
 }
 
-let pokemonSearch = (nameValue) =>{
-    axios.get(`https://pokeapi.co/api/v2/pokemon/${nameValue}`).then((response)=>{
+let pokemonSearch = (idValue,trainer) =>{
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${idValue}`).then((response)=>{
     let data = response.data;
     console.log(data);
 
@@ -85,14 +87,23 @@ let pokemonSearch = (nameValue) =>{
     document.body.appendChild(para);
     
     trainer.add(pokemon);
+
     gymMembers.add(trainer);
+    
+
 }).catch((error) =>{
     console.log(error);
 })
 }
+pokemonSearch(260, chhoti);   
+pokemonSearch(286, chhoti);
+pokemonSearch(802, chhoti);
+pokemonSearch(59, kevin);
+pokemonSearch(130, kevin);
+pokemonSearch(149, kevin);
+pokemonSearch(200, jihae);
+pokemonSearch(50, jihae);
+pokemonSearch(238, jihae);
 
-pokemonSearch('breloom');   
-pokemonSearch('marshadow');
-pokemonSearch('swampert');
 
 
