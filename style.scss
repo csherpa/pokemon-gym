@@ -3,14 +3,16 @@
 }
 
 #trainer-container{
+    margin-top: 5%;
     #trainer{
         text-align: center;
-        margin-top: 6%;
+        
     }
 }
 
 #image-container{
    text-align: center;
+   margin-top: 3%;
     #trainer-pic{
         height:300px;
         width:200px;
@@ -21,6 +23,7 @@
 #header-container{
    @extend %border;
    padding: 2%;
+   margin: 1%;
 }
 #gym-name{
     text-align: center;
@@ -32,7 +35,20 @@
 .display-stats{
    @extend %border;
 }
-#display-pokemon{
+
+
+
+
+
+#pokemon-container{
+    .display-pokemon{
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+    
+    #first-pokemon img{
+        max-width:80%;
+    }
     #second-pokemon img{
         max-width:80%;
     }
