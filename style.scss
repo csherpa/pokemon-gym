@@ -1,3 +1,5 @@
+@import 'kevin-style';
+
 %border{
    border: 2px solid black;
 }
@@ -31,15 +33,7 @@
 .gym-name{
     text-align: center;
 }
-.display-pokemon{
-   @extend %border;
-   text-align: center;
-   padding: 2%;
-}
 
-.display-stats{
-   @extend %border;
-}
 
 .trainer-container{
     flex-direction: column;
@@ -54,7 +48,3 @@
 .images{
     max-width:50%;
 }
-
-
-
-
