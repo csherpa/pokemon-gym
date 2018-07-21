@@ -8,17 +8,23 @@
 // Carousel configuration parameters
 // n = number of pokemon/vertices
 $n: 3;
-$item-width: 40%;
-// Item separation = width / 2 ?
-$item-separation: 150px;
-$viewer-distance: 360px;
+$item-width: 300px;
+$item-separation: 200px;
+$viewer-distance: 500px;
 
 // Derived variables
 $theta: 2 * 3.141592653589793 / $n;
 
 // apothem = s / (2 * Math.tan(Math.PI / n));
 // apothem = 300px / (2 * 1.732)
-$apothem: 173.205080757px;
+$apothem: 86.6025403784px;
+
+.carousel-container {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 .carousel {
 	padding: 20px;
@@ -35,17 +41,17 @@ $apothem: 173.205080757px;
 
 	figure {
         margin: 0;
-        background-color: rgba(200,200,200,0.4);
-        padding: 20px 0;
-		width: $item-width;
 		transform-style: preserve-3d;
 		transition: transform 0.5s;
 		transform-origin: 50% 50% (-$apothem);
 
 		.display-pokemon {
-			padding: 0 $item-separation / 2;
+			padding: 0 $item-separation/2;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
 
-			opacity: 0.95;
+			opacity: 0.98;
 
 			&:not(:first-of-type) {
 				position: absolute;

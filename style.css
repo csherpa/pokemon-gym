@@ -1,7 +1,21 @@
+.carousel-container {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .carousel {
   padding: 20px;
-  -webkit-perspective: 360px;
-          perspective: 360px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23,30 +37,37 @@
 
 .carousel figure {
   margin: 0;
-  background-color: rgba(200, 200, 200, 0.4);
-  padding: 20px 0;
-  width: 40%;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform-origin: 50% 50% -173.20508px;
-          transform-origin: 50% 50% -173.20508px;
+  -webkit-transform-origin: 50% 50% -86.60254px;
+          transform-origin: 50% 50% -86.60254px;
 }
 
 .carousel figure .display-pokemon {
-  padding: 0 75px;
-  opacity: 0.95;
+  padding: 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.98;
 }
 
 .carousel figure .display-pokemon:not(:first-of-type) {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform-origin: 50% 50% -173.20508px;
-          transform-origin: 50% 50% -173.20508px;
+  -webkit-transform-origin: 50% 50% -86.60254px;
+          transform-origin: 50% 50% -86.60254px;
 }
 
 .carousel figure .display-pokemon:nth-child(2) {
@@ -60,7 +81,7 @@
 }
 
 .carousel figure .display-pokemon .pokemon-container {
-  width: 40%;
+  width: 300px;
 }
 
 .carousel nav {
@@ -128,14 +149,7 @@
           flex-direction: column;
 }
 
-.display-container {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 8%;
-}
-
 .images {
-  max-width: 50%;
+  max-width: 150px;
 }
 /*# sourceMappingURL=style.css.map */

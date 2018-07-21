@@ -38,23 +38,21 @@
         </div>
 
         <!-- display pokemon & stats -->
-        <div id='pokemon-carousel-1' class="carousel display-container">
-            <figure>
-                <div class="col-2 display-pokemon">
-                    <div class="pokemon-container">
+        <div class="carousel-container">
+            <div id='pokemon-carousel-1' class="carousel">
+                <figure>
+                    <div class="display-pokemon">
                         <img class="images" src="https://static.giantbomb.com/uploads/scale_small/13/135472/1891758-001bulbasaur.png">
+                        <div id="first-stats">
+                            <p>stats</p>
+                            <p>stats</p>
+                            <p>stats</p>
+                            <p>stats</p>
+                        </div>
                     </div>
-                    <div id="first-stats">
-                        <p>stats</p>
-                        <p>stats</p>
-                        <p>stats</p>
-                        <p>stats</p>
-                    </div>
-                </div>
 
-                <div class="col-2 display-pokemon">
-                    <div class="pokemon-container">
-                        <img class="images" src="https://static.giantbomb.com/uploads/scale_small/13/135472/1891764-007squirtle.png">
+                    <div class="display-pokemon">
+                        <img class="images" src="https://static.giantbomb.com/uploads/scale_small/13/135472/1891758-001bulbasaur.png">
                         <div class="second-stats">
                             <p>stats</p>
                             <p>stats</p>
@@ -62,12 +60,10 @@
                             <p>stats</p>
                         </div>
                     </div>
-                </div>
 
 
-                <div class="col-2 display-pokemon">
-                    <div class="pokemon-container">
-                        <img class="images" src="https://static.giantbomb.com/uploads/scale_small/0/6087/2438704-1202149925_t.png">
+                    <div class="display-pokemon">
+                        <img class="images" src="https://static.giantbomb.com/uploads/scale_small/13/135472/1891758-001bulbasaur.png">
                         <div class="third-stats">
                             <p>stats</p>
                             <p>stats</p>
@@ -75,14 +71,16 @@
                             <p>stats</p>
                         </div>
                     </div>
-                </div>
-            </figure>
-            <nav>
-                <i class="fas fa-angle-left"></i>
-                <i class="fas fa-angle-right"></i>
-            </nav>
+                </figure>
+                <nav>
+                    <i class="fas fa-angle-left"></i>
+                    <i class="fas fa-angle-right"></i>
+                </nav>
+            </div>
         </div>
+    </div>
 
+    <div class="carousel-container">
         <div id='trainer-2'>
             <!-- display tainer -->
             <div class="row trainer-container">
@@ -116,8 +114,6 @@
                         </div>
                     </div>
 
-
-
                     <div class="col-2 display-pokemon">
                         <div class="pokemon-container">
                             <img class="images" src="https://static.giantbomb.com/uploads/scale_small/13/135472/1891764-007squirtle.png">
@@ -129,7 +125,6 @@
                             </div>
                         </div>
                     </div>
-
 
                     <div class="col-2 display-pokemon">
                         <div class="pokemon-container">
@@ -149,7 +144,9 @@
                 </nav>
             </div>
         </div>
+    </div>
 
+    <div class="carousel-container">
         <div id='trainer-3'>
             <!-- display tainer -->
             <div class="row trainer-container">
@@ -213,22 +210,24 @@
                     <i class="fas fa-angle-right"></i>
                 </nav>
             </div>
+        </div>
+    </div>
 
-            <!-- trainer img src -->
+    <!-- trainer img src -->
 
-            <!-- https://vignette.wikia.nocookie.net/nintendo/images/0/0f/Ethan.png/revision/latest?cb=20111124133921&path-prefix=en -->
-            <!-- https://orig00.deviantart.net/7f65/f/2016/191/7/3/minako__pokemon_trainer_oc__by_penspark-da9hbw9.png -->
+    <!-- https://vignette.wikia.nocookie.net/nintendo/images/0/0f/Ethan.png/revision/latest?cb=20111124133921&path-prefix=en -->
+    <!-- https://orig00.deviantart.net/7f65/f/2016/191/7/3/minako__pokemon_trainer_oc__by_penspark-da9hbw9.png -->
 
-            <!-- https://pre00.deviantart.net/1893/th/pre/i/2015/340/e/2/pokemon_trainer_mailee_by_animegothangel-d9j98t8.png -->
-            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-                crossorigin="anonymous"></script>
-            <script src="cs.js"></script>
-            <script src="kevin-script.js"></script>
+    <!-- https://pre00.deviantart.net/1893/th/pre/i/2015/340/e/2/pokemon_trainer_mailee_by_animegothangel-d9j98t8.png -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="cs.js"></script>
+    <script src="kevin-script.js"></script>
 </body>
 
 </html>
