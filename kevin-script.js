@@ -2,12 +2,14 @@ const setPokemonCarousel = id => {
     const carousel = document.getElementById(id),
           figure = carousel.querySelector('figure'),
           nav = carousel.querySelector('nav'),
-          num = figure.childElementCount,
+          num = (id === 'trainer-carousel') ? 
+            figure.getElementsByClassName('display-trainer').length :
+            figure.childElementCount,
           theta = 2 * Math.PI / num;
           // 2*PI*r = circumference of circle
           // theta = degree made btwn two apothems
-
     let curr = 0;
+    console.log(num)
 
     const onClick = e => {
         e.stopPropagation();
@@ -29,10 +31,7 @@ const setPokemonCarousel = id => {
     nav.addEventListener('click', onClick, true);
 }
 
+setPokemonCarousel('trainer-carousel');
 for (let i = 1; i < 4; i++) {
     setPokemonCarousel(`pokemon-carousel-${i}`);
-}
-
-const setTrainerCarousel = id => {
-    
 }
