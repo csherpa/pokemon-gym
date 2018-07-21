@@ -8,16 +8,17 @@
 // Carousel configuration parameters
 // n = number of pokemon/vertices
 $n: 3;
-$item-width: 300px;
-$item-separation: 200px;
-$viewer-distance: 500px;
+$item-width: 600px;
+$item-separation: 1000px;
+$viewer-distance: 1000px;
 
 // Derived variables
 $theta: 2 * 3.141592653589793 / $n;
 
 // apothem = s / (2 * Math.tan(Math.PI / n));
-// apothem = 300px / (2 * 1.732)
-$apothem: 86.6025403784px;
+// ideal apothem = 300px / (2 * 1.732)
+// ideal apothem too close to each other
+$apothem: 300px;
 
 .carousel-container {
 	margin: 0;
@@ -27,8 +28,7 @@ $apothem: 86.6025403784px;
 }
 
 .carousel {
-	padding: 20px;
-
+	margin-top: 20px;
 	perspective: $viewer-distance;
 	overflow: hidden;
 
@@ -50,7 +50,6 @@ $apothem: 86.6025403784px;
 			display:flex;
 			flex-direction: column;
 			align-items: center;
-
 			opacity: 0.98;
 
 			&:not(:first-of-type) {
@@ -67,7 +66,7 @@ $apothem: 86.6025403784px;
             }
             
             .pokemon-container {
-                width: $item-width;
+				width: $item-width;
             }
         }
 	}

@@ -13,9 +13,9 @@
 }
 
 .carousel {
-  padding: 20px;
-  -webkit-perspective: 500px;
-          perspective: 500px;
+  margin-top: 20px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,12 +43,12 @@
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform-origin: 50% 50% -86.60254px;
-          transform-origin: 50% 50% -86.60254px;
+  -webkit-transform-origin: 50% 50% -300px;
+          transform-origin: 50% 50% -300px;
 }
 
 .carousel figure .display-pokemon {
-  padding: 0 100px;
+  padding: 0 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,8 +66,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform-origin: 50% 50% -86.60254px;
-          transform-origin: 50% 50% -86.60254px;
+  -webkit-transform-origin: 50% 50% -300px;
+          transform-origin: 50% 50% -300px;
 }
 
 .carousel figure .display-pokemon:nth-child(2) {
@@ -81,7 +81,7 @@
 }
 
 .carousel figure .display-pokemon .pokemon-container {
-  width: 300px;
+  width: 600px;
 }
 
 .carousel nav {
