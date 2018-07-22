@@ -9,7 +9,6 @@ const setPokemonCarousel = id => {
           // 2*PI*r = circumference of circle
           // theta = degree made btwn two apothems
     let curr = 0;
-    console.log(num)
 
     const onClick = e => {
         e.stopPropagation();

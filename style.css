@@ -66,17 +66,16 @@
           transform: rotateY(4.18879rad);
 }
 
-.carousel figure .display-pokemon .pokemon-container {
-  width: 600px;
-}
-
 .carousel nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  width: 300px;
 }
 
 .carousel nav i {
@@ -90,6 +89,100 @@
 }
 
 .carousel nav i:hover {
+  color: #0f0;
+}
+
+#trainer-carousel {
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#trainer-carousel > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+#trainer-carousel #trainer-carousel-figure {
+  margin: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform-origin: 50% 50% -1000px;
+          transform-origin: 50% 50% -1000px;
+}
+
+#trainer-carousel #trainer-carousel-figure .display-trainer {
+  padding: 0 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.98;
+}
+
+#trainer-carousel #trainer-carousel-figure .display-trainer:not(:first-of-type) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform-origin: 50% 50% -1000px;
+          transform-origin: 50% 50% -1000px;
+}
+
+#trainer-carousel #trainer-carousel-figure .display-trainer:nth-child(2) {
+  -webkit-transform: rotateY(2.0944rad);
+          transform: rotateY(2.0944rad);
+}
+
+#trainer-carousel #trainer-carousel-figure .display-trainer:nth-child(3) {
+  -webkit-transform: rotateY(4.18879rad);
+          transform: rotateY(4.18879rad);
+}
+
+#trainer-carousel #trainer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 25%;
+  z-index: 2;
+  width: 300px;
+}
+
+#trainer-carousel #trainer-nav i {
+  cursor: pointer;
+  font-size: 3em;
+  margin: 10px 20px;
+}
+
+#trainer-carousel #trainer-nav i:focus {
+  outline: none;
+}
+
+#trainer-carousel #trainer-nav i:hover {
   color: #0f0;
 }
 
