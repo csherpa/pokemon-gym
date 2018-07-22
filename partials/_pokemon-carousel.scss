@@ -3,13 +3,13 @@
 $n: 3;
 $item-width: 600px;
 $item-separation: 1000px;
-$viewer-distance: 1000px;
+$viewer-distance: 1000px; // z-axis
 
 // Derived variables
 $theta: 2 * 3.141592653589793 / $n;
 
 // apothem = s / (2 * Math.tan(Math.PI / n));
-// ideal apothem = 300px / (2 * 1.732)
+// ideal apothem = 300px / (2 * 1.732) = 86px
 // ideal apothem too close to each other
 $apothem: 300px;
 

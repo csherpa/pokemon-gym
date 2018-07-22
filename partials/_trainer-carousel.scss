@@ -3,20 +3,18 @@
 $nT: 3;
 $trainer-width: 300px;
 $trainer-separation: 2000px;
-$trainer-viewer-distance: 2000px;
+$trainer-viewer-distance: 2000px; // z-axis
 
 // Derived variables
 $thetaT: 2 * 3.141592653589793 / $n;
 
 // apothem = s / (2 * Math.tan(Math.PI / n));
-// ideal apothem = 300px / (2 * 1.732)
-// ideal apothem too close to each other
+// did not use the apothem formula
 $apothemT: 1000px;
 
 #trainer-carousel {
 	perspective: $trainer-viewer-distance;
-	overflow: hidden;
-
+    overflow: hidden;
 	display: flex;
     flex-direction: column;
 	align-items: center;

@@ -1,3 +1,7 @@
+const kevin = document.getElementById('trainer-1'),
+      jihae = document.getElementById('trainer-2'),
+      chhoti = document.getElementById('trainer-3');
+
 const setPokemonCarousel = id => {
     const carousel = document.getElementById(id),
           figure = carousel.querySelector('figure'),
@@ -22,6 +26,20 @@ const setPokemonCarousel = id => {
         } else {
             curr--;
         }
+
+        // if (curr % 3 === 0) {
+        //     kevin.classList.remove('scaleX');
+        //     jihae.classList.add('scaleX');
+        //     chhoti.classList.add('scaleX');
+        // } else if (curr % 3 === 1) {
+        //     kevin.classList.add('scaleX');
+        //     jihae.classList.remove('scaleX');
+        //     chhoti.classList.add('scaleX');
+        // } else {
+        //     kevin.classList.add('scaleX');
+        //     jihae.classList.add('scaleX');
+        //     chhoti.classList.remove('scaleX');
+        // }
 
         // 1 rad = 180deg
         figure.style.transform = `rotateY(${curr * -theta}rad)`;

@@ -52,19 +52,17 @@ class Pokemon {
 let trainerNum = 0;
 
 // function that will assign content
-const assignContent = (trainersPokemon, pokemonNum) => {
-    const trainerName = gymMembers.all()[trainerNum].name;
-    document.getElementById(trainerName).textContent = trainerName.toUpperCase();
+const assignContent = (name, trainersPokemon, pokemonNum) => {
+    document.getElementById(name).textContent = name.toUpperCase();
 
-    const target = document.getElementById(`${trainerName}-${pokemonNum}`);
-    console.log(target);
+    const target = document.getElementById(`${name}-${pokemonNum}`);
     const template =
         `<img class='images' src='${trainersPokemon.photo}'></img>
         <h3>${trainersPokemon.name}</h3>
         <p>HP: ${trainersPokemon.hp}</p>
         <p>Attack: ${trainersPokemon.attack}</p>
         <p>Defense: ${trainersPokemon.defense}</p>
-        <p>Abilities ${trainersPokemon.abilities.join(', ')}</p>`
+        <p>Abilities: ${trainersPokemon.abilities.join(', ')}</p>`
 
     const div = document.createElement('div');
     div.innerHTML = template;
@@ -93,10 +91,10 @@ let pokemonSearch = (idValue, trainer) => {
         if (!gymMembers.get(trainer)) gymMembers.add(trainerObj);
         gymMembers.get(trainer).add(pokemon);
     }).then(() => {
-        const trainersPokemon = gymMembers.get(trainer).all();
-        if (trainersPokemon.length === 3) {
+        const trainerObj = gymMembers.get(trainer);
+        if (trainerObj.all().length === 3) {
             for (let i = 0; i < 3; i++) {
-                assignContent(trainersPokemon[i], i+1);
+                assignContent(trainerObj.name, trainerObj.all()[i], i+1);
             }
             trainerNum++;
         }
