@@ -13,7 +13,6 @@ class Gym {
     all () {
         return this.allTrainers;
     }
-}
 
 const gymMembers = new Gym();
 
