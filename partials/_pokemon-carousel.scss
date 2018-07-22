@@ -1,0 +1,78 @@
+// Carousel configuration parameters
+// n = number of pokemon/vertices
+$n: 3;
+$item-width: 600px;
+$item-separation: 1000px;
+$viewer-distance: 1000px; // z-axis
+
+// Derived variables
+$theta: 2 * 3.141592653589793 / $n;
+
+// apothem = s / (2 * Math.tan(Math.PI / n));
+// ideal apothem = 300px / (2 * 1.732) = 86px
+// ideal apothem too close to each other
+$apothem: 300px;
+
+.carousel {
+	margin-top: 20px;
+	perspective: $viewer-distance;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> * {
+		flex: 0 0 auto;
+	}
+
+	figure {
+        margin: 0;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+		transform-origin: 50% 50% (-$apothem);
+
+		.display-pokemon {
+			padding: 0 $item-separation/2;
+			display:flex;
+			flex-direction: column;
+			align-items: center;
+			opacity: 0.98;
+
+			&:not(:first-of-type) {
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform-origin: 50% 50% (-$apothem);
+			}
+
+			@for $i from 2 through $n {
+				&:nth-child(#{$i}) {
+					transform: rotateY(#{($i - 1) * $theta}rad);
+				}
+            }
+        }
+	}
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		top: 40%;
+		width: 300px;
+
+		i {
+			cursor: pointer;
+			font-size: 3em;
+			margin: 10px 20px;
+
+			&:focus{
+				outline: none;
+			}
+
+			&:hover {
+				color: #0f0;
+			}
+		}
+	}
+}
+

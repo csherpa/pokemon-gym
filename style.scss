@@ -1,3 +1,6 @@
+@import './partials/pokemon-carousel';
+@import './partials/trainer-carousel';
+
 %border{
    border: 2px solid black;
 }
@@ -31,30 +34,17 @@
 .gym-name{
     text-align: center;
 }
-.display-pokemon{
-   @extend %border;
-   text-align: center;
-   padding: 2%;
-}
 
-.display-stats{
-   @extend %border;
-}
 
 .trainer-container{
     flex-direction: column;
 }
 
-.display-container{
-    justify-content: space-evenly;
-    margin-top: 8%;
-}
-
 
 .images{
-    max-width:50%;
+    width:180px;
 }
 
-
-
-
+// .scaleX {
+//     transform: scaleX(-1);
+// }

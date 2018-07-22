@@ -19,204 +19,119 @@
         <h1 class="gym-name">Vermillion Gym</h1>
     </div>
 
-    <div id='trainer-1'>
-        <!-- display tainer -->
-        <div class="row trainer-container">
-            <!-- <i class="fas fa-angle-left"></i> -->
-            <h1 class="trainer">
-                <button>
-                    <i class="fas fa-angle-left"></i>
-                </button>
-                Trainer
-                <button>
-                    <i class="fas fa-angle-right"></i>
-                </button>
-            </h1>
-            <div class="image-container">
-                <img class="trainer-pic" src="https://orig00.deviantart.net/5f54/f/2016/191/3/b/gale__pokemon_trainer_oc__by_penspark-da9hco4.png">
-            </div>
-        </div>
-
-        <!-- display pokemon & stats -->
-        <div class="row display-container">
-            <div class="col-2 display-pokemon">
-                <div class="first-pokemon">
-                    <img class="images" src="https://cdn.bulbagarden.net/upload/thumb/b/b8/059Arcanine.png/600px-059Arcanine.png">
-                </div>
-                <div id="kevin1Poke-stats">
-                    <h1 id = "poke1Name">name</h1>
-                    <p id= "poke1Hp">stats</p>
-                    <p id= "poke1Attack">stats</p>
-                    <p id = "poke1Defense">stats</p>
-                    <p id = "poke1Ability">stats</p>
-                </div>
-            </div>
-
-            <div class="col-2 display-pokemon">
-                <div class="second-pokemon">
-                    <img class="images" src="https://cdn.bulbagarden.net/upload/4/41/130Gyarados.png">
-                </div>    
-                    <div id="kevin2Poke-stats">
-                        <h1 id = "poke2Name">name</h1>
-                        <p id= "poke2Hp">stats</p>
-                        <p id= "poke2Attack">stats</p>
-                        <p id = "poke2Defense">stats</p>
-                        <p id = "poke2Ability">stats</p>
-                    </div>
-                </div>
-           
-
-
-            <div class="col-2 display-pokemon">
-                <div class="third-pokemon">
-                    <img class="images" src="https://cdn.bulbagarden.net/upload/8/8b/149Dragonite.png">
-                    <div id="kevin3Poke-stats">
-                        <h1 id = "poke3Name">name</h1>
-                        <p id= "poke3Hp">stats</p>
-                        <p id= "poke3Attack">stats</p>
-                        <p id = "poke3Defense">stats</p>
-                        <p id = "poke3Ability">stats</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id='trainer-2'>
-            <!-- display tainer -->
-            <div class="row trainer-container">
-                <!-- <i class="fas fa-angle-left"></i> -->
-                <h1 class="trainer">
-                    <button>
-                        <i class="fas fa-angle-left"></i>
-                    </button>
-                    Trainer
-                    <button>
-                        <i class="fas fa-angle-right"></i>
-                    </button>
-                </h1>
-                <div class="image-container">
-                    <img class="trainer-pic" src="https://orig00.deviantart.net/5f54/f/2016/191/3/b/gale__pokemon_trainer_oc__by_penspark-da9hco4.png">
-                </div>
-            </div>
-
-            <!-- display pokemon & stats -->
-            <div class="row display-container">
-                <div class="col-2 display-pokemon">
-                    <div class="first-pokemon">
-                        <img class="images" src="https://cdn.bulbagarden.net/upload/thumb/3/31/050Diglett.png/600px-050Diglett.png">
-                    </div>
-                    <div id="jihae1Poke-stats">
-                        <h1 id = "poke4Name">name</h1>
-                        <p id= "poke4Hp">stats</p>
-                        <p id= "poke4Attack">stats</p>
-                        <p id = "poke4Defense">stats</p>
-                        <p id = "poke4Ability">stats</p>
-                    </div>
-                </div>
-
-                <div class="col-2 display-pokemon">
-                    <div class="second-pokemon">
-                        <img class="images" src="https://cdn.bulbagarden.net/upload/b/be/200Misdreavus.png">
-                        <div id="jihae2Poke-stats">
-                            <h1 id = "poke5Name">name</h1>
-                            <p id= "poke5Hp">stats</p>
-                            <p id= "poke5Attack">stats</p>
-                            <p id = "poke5Defense">stats</p>
-                            <p id = "poke5Ability">stats</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-2 display-pokemon">
-                    <div class="third-pokemon">
-                        <img class="images" src="https://cdn.bulbagarden.net/upload/thumb/0/0e/238Smoochum.png/600px-238Smoochum.png">
-                        <div id="jihae3Poke-stats">
-                            <h1 id = "poke6Name">name</h1>
-                            <p id= "poke6Hp">stats</p>
-                            <p id= "poke6Attack">stats</p>
-                            <p id = "poke6Defense">stats</p>
-                            <p id = "poke6Ability">stats</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id='trainer-3'>
+    <div id='trainer-carousel'>
+        <nav id='trainer-nav'>
+            <i class="fas fa-angle-left"></i>
+            <i class="fas fa-angle-right"></i>
+        </nav>
+        <figure id='trainer-carousel-figure'>
+            <div id='trainer-1' class='display-trainer'>
                 <!-- display tainer -->
                 <div class="row trainer-container">
                     <!-- <i class="fas fa-angle-left"></i> -->
-                    <h1 class="trainer">
-                        <button>
-                            <i class="fas fa-angle-left"></i>
-                        </button>
-                        Trainer
-                        <button>
-                            <i class="fas fa-angle-right"></i>
-                        </button>
-                    </h1>
+                    <h2 id='kevin' class="trainer">Trainer</h2>
                     <div class="image-container">
-                        <img class="trainer-pic" src="https://orig00.deviantart.net/5f54/f/2016/191/3/b/gale__pokemon_trainer_oc__by_penspark-da9hco4.png">
+                        <img class="trainer-pic" src="https://vignette.wikia.nocookie.net/nintendo/images/0/0f/Ethan.png/revision/latest?cb=20111124133921&path-prefix=en">
                     </div>
                 </div>
 
                 <!-- display pokemon & stats -->
-                <div class="row display-container">
-                    <div class="col-2 display-pokemon">
-                        <div class="first-pokemon">
-                            <img class="images" src="https://cdn.bulbagarden.net/upload/d/de/286Breloom.png">
-                        </div>
-                        <div id="chhoti1Poke-stats">
-                            <h1 id = "poke7Name">name</h1>
-                            <p id= "poke7Hp">stats</p>
-                            <p id= "poke7Attack">stats</p>
-                            <p id = "poke7Defense">stats</p>
-                            <p id = "poke7Ability">stats</p>
-                        </div>
-                    </div>
+                <div id='pokemon-carousel-1' class="carousel">
+                    <figure>
+                        <div id='kevin-1' class="display-pokemon">
 
-                    <div class="col-2 display-pokemon">
-                        <div class="second-pokemon">
-                            <img class="images" src="https://cdn.bulbagarden.net/upload/thumb/b/b6/260Swampert.png/600px-260Swampert.png">
-                            <div id="chhoti2Poke-stats">
-                                <h1 id = "poke8Name">name</h1>
-                                <p id= "poke8Hp">stats</p>
-                                <p id= "poke8Attack">stats</p>
-                                <p id = "poke8Defense">stats</p>
-                                <p id = "poke8Ability">stats</p>
-                            </div>
                         </div>
-                    </div>
+
+                        <div id='kevin-2' class="display-pokemon">
+
+                        </div>
 
 
-                    <div class="col-2 display-pokemon">
-                        <div class="third-pokemon">
-                            <img class="images" src="https://cdn.bulbagarden.net/upload/thumb/8/89/802Marshadow.png/600px-802Marshadow.png">
-                            <div id="chhoti3Poke-stats">
-                                <h1 id = "poke9Name">name</h1>
-                                <p id= "poke9Hp">stats</p>
-                                <p id= "poke9Attack">stats</p>
-                                <p id = "poke9Defense">stats</p>
-                                <p id = "poke9Ability">stats</p>
-                            </div>
+                        <div id='kevin-3' class="display-pokemon">
+
                         </div>
+                    </figure>
+                    <nav>
+                        <i class="fas fa-angle-left"></i>
+                        <i class="fas fa-angle-right"></i>
+                    </nav>
+                </div>
+            </div>
+
+            <div id='trainer-2' class='display-trainer'>
+                <!-- display trainer -->
+                <div class="row trainer-container">
+                    <h2 id='jihae' class="trainer">Trainer</h2>
+                    <div class="image-container">
+                        <img class="trainer-pic" src="https://orig00.deviantart.net/7f65/f/2016/191/7/3/minako__pokemon_trainer_oc__by_penspark-da9hbw9.png">
                     </div>
                 </div>
 
-                <!-- trainer img src -->
+                <!-- display pokemon & stats -->
+                <div id='pokemon-carousel-2' class="carousel">
+                    <figure>
+                        <div id='jihae-1' class="display-pokemon">
 
-                <!-- https://vignette.wikia.nocookie.net/nintendo/images/0/0f/Ethan.png/revision/latest?cb=20111124133921&path-prefix=en -->
-                <!-- https://orig00.deviantart.net/7f65/f/2016/191/7/3/minako__pokemon_trainer_oc__by_penspark-da9hbw9.png -->
+                        </div>
 
-                <!-- https://pre00.deviantart.net/1893/th/pre/i/2015/340/e/2/pokemon_trainer_mailee_by_animegothangel-d9j98t8.png -->
-                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                    crossorigin="anonymous"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                    crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-                    crossorigin="anonymous"></script>
-                <script src="cs.js"></script>
+                        <div id='jihae-2' class="display-pokemon">
+
+                        </div>
+
+
+                        <div id='jihae-3' class="display-pokemon">
+
+                        </div>
+                    </figure>
+                    <nav>
+                        <i class="fas fa-angle-left"></i>
+                        <i class="fas fa-angle-right"></i>
+                    </nav>
+                </div>
+            </div>
+
+            <div id='trainer-3' class='display-trainer'>
+                <!-- display tainer -->
+                <div class="row trainer-container">
+                    <!-- <i class="fas fa-angle-left"></i> -->
+                    <h2 id='chhoti' class="trainer">Trainer</h2>
+                    <div class="image-container">
+                        <img class="trainer-pic" src="https://pre00.deviantart.net/1893/th/pre/i/2015/340/e/2/pokemon_trainer_mailee_by_animegothangel-d9j98t8.png">
+                    </div>
+                </div>
+
+                <!-- display pokemon & stats -->
+                <div id='pokemon-carousel-3' class="carousel">
+                    <figure>
+                        <div id='chhoti-1' class="display-pokemon">
+
+                        </div>
+
+                        <div id='chhoti-2' class="display-pokemon">
+
+                        </div>
+
+
+                        <div id='chhoti-3' class="display-pokemon">
+
+                        </div>
+                    </figure>
+                    <nav>
+                        <i class="fas fa-angle-left"></i>
+                        <i class="fas fa-angle-right"></i>
+                    </nav>
+                </div>
+            </div>
+
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+                crossorigin="anonymous"></script>
+            <script src="cs.js"></script>
+            <script src="kevin-script.js"></script>
 </body>
 
 </html>
