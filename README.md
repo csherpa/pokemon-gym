@@ -19,4 +19,4 @@
 <p>Bootstrap - Front-End framework used</p>
 <p>cdnjs</p>
 <h4>API</h4>
-<p><a herf ='https://pokeapi.co/api/v2/pokemon/'></a></p>
+<p><a href ='https://pokeapi.co/api/v2/pokemon/'> Pokemon Api</a></p>
