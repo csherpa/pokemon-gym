@@ -16,6 +16,8 @@ $thetaT: 2 * 3.141592653589793 / $n;
 $apothemT: 1000px;
 
 #trainer-carousel {
+	position: relative;
+	top: -60px;
 	perspective: $trainer-viewer-distance;
     overflow: hidden;
 	display: flex;
