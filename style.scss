@@ -1,6 +1,19 @@
 @import './partials/pokemon-carousel';
 @import './partials/trainer-carousel';
 
+
+@font-face{
+    font-family:arcade;
+    src:url("./arcadeclassic/ARCADECLASSIC.TTF");
+}
+
+
+body{
+    background: url("https://www.models-resource.com/resources/big_icons/22/21700.png");
+    background-size:cover;
+    font-family:arcade;
+    
+}
 %border{
    border: 2px solid black;
 }
@@ -24,7 +37,7 @@
 }
 
 .header-container{
-   @extend %border;
+
    padding: 2%;
    margin: 1%;
    justify-content: center;
@@ -33,6 +46,8 @@
 
 .gym-name{
     text-align: center;
+    word-spacing: 15px;
+    font-size: 4em;
 }
 
 
@@ -45,6 +60,15 @@
     width:180px;
 }
 
+#kevin {
+    color: goldenrod;
+}
+
 // .scaleX {
 //     transform: scaleX(-1);
 // }
+.badge-img{
+    width:70px;
+    height:70px;
+    margin: 0 10px;
+}
