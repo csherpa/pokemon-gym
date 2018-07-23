@@ -86,8 +86,13 @@
       #trainer-carousel #trainer-nav i:hover {
         color: #0f0; }
 
-.header-container {
-  border: 2px solid black; }
+@font-face {
+  font-family: arcade;
+  src: url("./arcadeclassic/ARCADECLASSIC.TTF"); }
+body {
+  background: url("https://www.models-resource.com/resources/big_icons/22/21700.png");
+  background-size: cover;
+  font-family: arcade; }
 
 .trainer-container {
   margin-top: 5%; }
@@ -108,7 +113,9 @@
   justify-content: center; }
 
 .gym-name {
-  text-align: center; }
+  text-align: center;
+  word-spacing: 15px;
+  font-size: 4em; }
 
 .trainer-container {
   flex-direction: column; }
