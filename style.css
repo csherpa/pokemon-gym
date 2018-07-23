@@ -10,7 +10,7 @@
   .carousel figure {
     margin: 0;
     transform-style: preserve-3d;
-    transition: transform 0.5s;
+    transition: transform 1s ease-in-out;
     transform-origin: 50% 50% -300px; }
     .carousel figure .display-pokemon {
       padding: 0 500px;
@@ -122,5 +122,13 @@ body {
 
 .images {
   width: 180px; }
+
+#kevin {
+  color: goldenrod; }
+
+.badge-img {
+  width: 70px;
+  height: 70px;
+  margin: 0 10px; }
 
 /*# sourceMappingURL=style.css.map */
