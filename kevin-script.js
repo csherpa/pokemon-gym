@@ -3,6 +3,7 @@ const kevin = document.getElementById('trainer-1'),
       chhoti = document.getElementById('trainer-3');
 
 const setPokemonCarousel = id => {
+    // based off of https://www.sitepoint.com/building-3d-rotating-carousel-css-javascript/
     const carousel = document.getElementById(id),
           figure = carousel.querySelector('figure'),
           nav = carousel.querySelector('nav'),

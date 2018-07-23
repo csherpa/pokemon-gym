@@ -1,3 +1,6 @@
+// based off of https://www.sitepoint.com/building-3d-rotating-carousel-css-javascript/
+// all rotations are relative to the figure/first picture
+
 // Carousel configuration parameters
 // n = number of pokemon/vertices
 $nT: 3;
@@ -19,13 +22,15 @@ $apothemT: 1000px;
     flex-direction: column;
 	align-items: center;
 	> * {
+		// force all children to have default flex values
 		flex: 0 0 auto;
 	}
 
 	#trainer-carousel-figure {
         margin: 0;
-		transform-style: preserve-3d;
-		transition: transform 0.5s;
+		transform-style: preserve-3d; // default flat; change to 3d
+		transition: transform 1s ease-in-out;
+		// x-axis, y-axis, z-axis
 		transform-origin: 50% 50% (-$apothemT);
 
 		.display-trainer {
@@ -42,6 +47,7 @@ $apothemT: 1000px;
 				transform-origin: 50% 50% (-$apothemT);
 			}
 
+			// only from 2 through 3, so only 2 elements in this case
 			@for $i from 2 through $nT {
 				&:nth-child(#{$i}) {
 					transform: rotateY(#{($i - 1) * $thetaT}rad);
